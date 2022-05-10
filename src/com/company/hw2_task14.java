@@ -4,6 +4,7 @@ package com.company;
 Например: substring(“let’s talk about java”, 7,20) -> “talk about ja”*/
 public class hw2_task14 {
     public static void main(String[] args) {
+
         String str = "it's too much homework this time!!!";
         System.out.println(substring(str, 0 ,22));
     }

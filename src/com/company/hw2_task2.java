@@ -4,11 +4,12 @@ true если number1 делится на number2 без остатка. Ана�
 реализовать метод печати результата.*/
 public class hw2_task2 {
     public static void main(String[] args) {
-        printResult(10,4,isDivisible(10,4));
+        int number1=10;
+        int number2=0;
+        printResult(number1,number2 ,isDivisible(number1,number2));
     }
-    public static boolean isDivisible(int number1, int number2){
-        boolean answer=(number1%number2)==0;
-        return answer;
+    public static boolean isDivisible(int number1, int number2) {
+       return (number2!=0 && number1%number2==0);
     }
     public static void printResult(int number1, int number2, boolean answer){
         if(answer){

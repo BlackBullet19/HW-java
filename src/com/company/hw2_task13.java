@@ -4,13 +4,14 @@ package com.company;
 public class hw2_task13 {
     public static void main(String[] args) {
         String str = "Hello";
+        int a=str.length()-1;
 
-        System.out.print(strWithBraces(str, 0, 4));
+        System.out.print(strWithBraces(str, 0,a));
     }
 
-    public static String strWithBraces(String str, int start, int end){
+    public static String strWithBraces(String str, int start, int a){
         String strBraces="";
-        for(int i=start; i<=end;i++){
+        for(int i=start; i<=a;i++){
             char ch=str.charAt(i);
             strBraces=strBraces+"[" + ch +"]";
         }

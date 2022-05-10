@@ -6,7 +6,8 @@ number, boolean result) который выводит на экран строк
 Подсказка: Используем конструкцию if и оператор % modulo*/
 public class hw2_task1 {
     public static void main(String[] args) {
-        printCheckResultMessage(15,isEven(15));
+        int a=21;
+        printCheckResultMessage(a,isEven(a));
     }
     public static boolean isEven(int number){
         boolean result = (number %2)==0;

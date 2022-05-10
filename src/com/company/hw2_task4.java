@@ -4,18 +4,22 @@ package com.company;
 Например: max3(10,19,0) -> 19*/
 public class hw2_task4 {
     public static void main(String[] args) {
-        max3(100,5,363);
+        System.out.println("наибольшее из трех переданных чисел " +max3(10000,5000,60));
     }
     public static int max3(int a, int b, int c) {
-    if((a>=b && a>=c)){
-        System.out.println(a+" наибольшее из трех переданных чисел");
+    int biggest =0;
+        if((a>=b && a>=c)){
+        return biggest=a;
+
     } else if(b>=a && b>=c){
-        System.out.println(b+" наибольшее из трех переданных чисел");
+        return biggest=b;
+
     } else {
-        System.out.println(c+" наибольшее из трех переданных чисел");
+            return biggest=c;
+
     }
 
-        return a;
+
     }
 }
 

@@ -5,17 +5,24 @@ package com.company;
 Например: longestString (“java”,”welcome”,”hello”) -> “welcome”*/
 public class hw2_task5 {
     public static void main(String[] args) {
-        longest("welcome","java", "hello");
+        String a="welcome to the jungle";
+        String b="highway to hell";
+        String c="we are the champions";
+        answer(longestString(a, b, c));
     }
-    public static String longest(String a, String b, String c) {
-        if((a.length()>=b.length() && a.length()>=c.length())){
-            System.out.println(a+" самая длинная строка из трех заданных строк");
-        } else if(b.length()>=a.length() && b.length()>=c.length()){
-            System.out.println(b+" самая длинная строка из трех заданных строк");
-        } else {
-            System.out.println(c+" самая длинная строка из трех заданных строк");
-        }
 
-        return a;
+    public static String longestString(String a, String b, String c) {
+        String longest="";
+        if((a.length()>=b.length() && a.length()>=c.length())){
+            return longest=a;
+        } else if(b.length()>=a.length() && b.length()>=c.length()){
+            return longest=b;
+        } else {
+            return longest=c;
+        }
+    }
+
+    public static void answer(String longest){
+        System.out.println("самая длинная строка из трех заданных строк '"+longest +"'");
     }
 }
