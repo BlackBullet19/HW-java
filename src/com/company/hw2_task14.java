@@ -5,16 +5,16 @@ package com.company;
 public class hw2_task14 {
     public static void main(String[] args) {
 
-        String str = "it's too much homework this time!!!";
-        System.out.println(substring(str, 0 ,22));
+        String str = "it's too much homework this time!!!"; // defining line
+        System.out.println(substring(str, 0 ,22)); // range from where we will take letters for new line
     }
 
     public static String substring(String str, int start, int finish) {
-        String result="";
-        for(int i=start; i<finish; i++){
-            char ch=str.charAt(i);
-            result=result+ch;
+        String result=""; // this will be an answer(String)
+        for(int i=start; i<finish; i++){ // loop which one takes every letter one by one from our range from start to end, step +1
+            char ch=str.charAt(i); // defining character from this place of variable i
+            result=result+ch;// adding it to new String with every step +1 letter
         }
-        return result;
+        return result; // return an answer
     }
 }
