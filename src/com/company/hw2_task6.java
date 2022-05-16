@@ -7,7 +7,7 @@ public class hw2_task6 {
     }
 
     public static void numbersNotDivisibleByFour(int start, int finish) {
-        for(int i=start; i<=finish; i++) { // make a loop in range first number(0) to last (100) step will be +1
+        for(int i=start; i<finish; i++) { // make a loop in range first number(0) to last (100) step will be +1
         if((i % 4)!=0) { // making condition, if number in given range isn't divisible with 4
                 System.out.println(i);// print number which met condition
             }
